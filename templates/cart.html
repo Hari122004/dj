@@ -1,0 +1,73 @@
+<!-- cart/cart.html -->
+{% load static %}
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		/* Add CSS styles for flex container and items */
+		.product-list {
+			display: flex;
+			flex-wrap: wrap; /* Allow items to wrap to the next row if necessary */
+			justify-content: space-between; /* Space items evenly along the main axis */
+			list-style: none; /* Remove list styles */
+			padding: 0;
+		}
+
+		.product-item {
+			
+			flex: 1; /* Grow to fill available space evenly */
+			/* Limit item width to avoid overcrowding */
+			margin: 10px; /* Add spacing between items */
+			border: 1px solid #ccc; /* Add a border for visual separation */
+			padding: 10px;
+			text-align: center;
+		}
+
+		/* Style the "Buy Now" button */
+		.buy-now-button {
+			display: block;
+			margin-top: 10px;
+			background-color: #007bff;
+			color: #fff;
+			text-decoration: none;
+			padding: 5px 10px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+
+<body>
+
+	
+
+	<div class="cartTab">
+    <h1>Cart</h1>
+    <div class="listcart">
+      <img src="{%static 'product.jpg'%}" alt="cart not found">
+    </div>
+  <div class="name">
+     NAME
+  </div>
+  <div class="totalprice">
+    2000
+  </div>
+  <div class="quantity">
+    <span class="minus"></span>
+    <span>1</span>
+    <span class="plus"></span>
+  </div>
+    <div class="btn"> 
+   <button class="close">CLOSE</button>
+   <button class="checkout">CHECK OUT</button>
+    </div>
+
+	
+
+	
+	
+</body>
+
+</html>
